@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IoT-Based Patient Assistance System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>IoT-Based Patient Assistance System</h1>
+        <p>A revolutionary device for assisting elderly patients with medication adherence.</p>
+        <img src="https://via.placeholder.com/800x400" alt="Patient Assistance System Image">
+    </header>
+
+    <section class="overview">
+        <h2>Overview</h2>
+        <p>The IoT-Based Patient Assistance System is an innovative solution designed to help elderly patients manage their medications effectively. By combining automated reminders, accurate pill dispensing, and real-time monitoring, this system ensures that patients take the correct medication on time.</p>
+    </section>
+
+    <section class="features">
+        <h2>Key Features</h2>
+        <ul>
+            <li>
+                <button onclick="toggleFeature('feature1')">Automated Pill Dispensing</button>
+                <p id="feature1" class="feature-detail">Uses a stepper motor-driven rotary dispenser to provide the correct dosage at scheduled times.</p>
+            </li>
+            <li>
+                <button onclick="toggleFeature('feature2')">Real-Time Notifications</button>
+                <p id="feature2" class="feature-detail">Connected to a mobile app for reminders, ensuring patients don’t miss any doses.</p>
+            </li>
+            <li>
+                <button onclick="toggleFeature('feature3')">User-Friendly Interface</button>
+                <p id="feature3" class="feature-detail">Equipped with an LCD display that shows dosage history, schedules, and more.</p>
+            </li>
+            <li>
+                <button onclick="toggleFeature('feature4')">Remote Monitoring</button>
+                <p id="feature4" class="feature-detail">Allows caregivers to monitor patient adherence and adjust medication schedules through the app.</p>
+            </li>
+            <li>
+                <button onclick="toggleFeature('feature5')">Secure and Reliable</button>
+                <p id="feature5" class="feature-detail">Ensures secure storage and handling of medications, protecting patient information and privacy.</p>
+            </li>
+        </ul>
+    </section>
+
+    <section class="benefits">
+        <h2>Benefits</h2>
+        <img src="https://via.placeholder.com/400x200" alt="Benefits Image">
+        <p>This system provides several advantages to patients and caregivers:</p>
+        <ul>
+            <li>Reduces dependence on caregivers for medication management.</li>
+            <li>Ensures accurate, timely medication intake, minimizing missed doses.</li>
+            <li>Promotes independence, helping elderly patients maintain their health and autonomy.</li>
+        </ul>
+    </section>
+
+    <section class="technical">
+        <h2>Technical Specifications</h2>
+        <img src="C:\Users\user\Product_Webpage\.vscode\download.jpeg" alt="Technical Specifications Image">
+        <p>The system is built on an ESP32 microcontroller with built-in Wi-Fi and Bluetooth capabilities, allowing seamless communication with a connected mobile app. It uses a 28BYJ-48 stepper motor for precise medication dispensing and a ULN2003 motor driver for stable performance. Power is supplied by a long-lasting lithium-ion battery, ensuring continuous operation.</p>
+    </section>
+
+    <section class="about">
+        <h2>About Us</h2>
+        <img src="https://via.placeholder.com/400x200" alt="About Us Image">
+        <p>This project was developed by a team of mechatronics engineering students from Thapar Institute of Engineering & Technology, under the guidance of Prof. Sandeep Kumar Sharma and Dr. Vishal Gupta. Our mission is to support elderly independence through IoT technology and innovative solutions.</p>
+    </section>
+
+    <footer>
+        <p>© 2024 IoT-Based Patient Assistance System. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript for toggling features -->
+    <script>
+        function toggleFeature(id) {
+            const feature = document.getElementById(id);
+            feature.style.display = feature.style.display === 'block' ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>
